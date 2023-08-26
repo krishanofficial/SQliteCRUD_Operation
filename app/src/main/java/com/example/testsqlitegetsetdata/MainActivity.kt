@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val email=findViewById<EditText>(R.id.email)
         val userId=findViewById<EditText>(R.id.userid)
         val password=findViewById<EditText>(R.id.password)
-        val contact=findViewById<EditText>(R.id.contact)
+        val contactTxt=findViewById<EditText>(R.id.contact)
 
 
         save.setOnClickListener {
@@ -33,17 +33,18 @@ class MainActivity : AppCompatActivity() {
             val emailData = email.text.toString()
             val userData = userId.text.toString()
             val passwordData = password.text.toString()
-            val contactData = contact.text.toString()
+            val contactData = contactTxt.text.toString()
 
-            db.insertData(nameData, emailData, userData, passwordData, contactData)
+            db.insertData (nameData,emailData, userData, passwordData, contactData)
 
-            Toast.makeText(this, nameData + emailData+userData+passwordData+contactData+ " Added To DataBase", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,
+                "$nameData$emailData$userData$passwordData Added To DataBase", Toast.LENGTH_LONG).show()
 
             name.text.clear()
             email.text.clear()
             userId.text.clear()
             password.text.clear()
-            contact.text.clear()
+            contactTxt.text.clear()
             startActivity(Intent(this,ViewDataActivity::class.java))
         }
 

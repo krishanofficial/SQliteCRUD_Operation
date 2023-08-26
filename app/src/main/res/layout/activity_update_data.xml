@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDataActivity">
+    <EditText
+        android:id="@+id/idUpDAte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your UpDate Id"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp"
+        />
+
+    <EditText
+        android:layout_below="@id/idUpDAte"
+        android:id="@+id/upDateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="40dp"
+        tools:ignore="NotSibling" />
+    <EditText
+        android:id="@+id/upDateEmail"
+        android:layout_below="@id/upDateName"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email  Address"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="40dp"
+        />
+    <EditText
+        android:id="@+id/upDateUserId"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter User ID"
+        android:layout_below="@id/upDateEmail"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="40dp"
+        />
+    <EditText
+        android:id="@+id/upDatePassword"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_below="@id/upDateUserId"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="40dp"
+        />
+    <EditText
+        android:id="@+id/upDateContact"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Contact"
+        android:layout_below="@id/upDatePassword"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="40dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upDateData"
+        android:layout_below="@id/upDateContact"
+        android:hint="Update Data"
+        android:textColor="@color/black"
+        android:backgroundTint="#D24AE1"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="55dp"
+        />
+
+
+
+
+</RelativeLayout>
